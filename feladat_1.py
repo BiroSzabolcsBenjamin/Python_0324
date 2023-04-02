@@ -7,13 +7,16 @@ class Haromszog:
     def kerulet(self):
         return self.a+self.b+self.c
     def terulet(self):
-        s=(a+b+c)/2   
-        return (s*(s-a)*(s-b)*(s-c))**0.5
+        s=(a+b+c)/2 #kerület fele  
+        return math.sqrt(s*(s-a)*(s-b)*(s-c))
     def szerkeszthetoseg(self):
         if a<b+c and b<a+c and c<b+a:
             return "Szerkeszthető!"
         else:
             return "Ez a háromszög nem szerkeszthető!"
+    def korsugar(self):
+        s=(a+b+c)/2
+        return math.sqrt(s*(s-a)*(s-b)*(s-c))/((a+b+c)/2)
 
 haromszog=[]
 a=int(input("a oldal hossza(cm): "))
@@ -25,3 +28,4 @@ haromszog.append(szog)
 print("A háromszog kerülete: ", szog.kerulet(),"cm")
 print("A háromszog területe: ", round(szog.terulet(),2),"cm")
 print(szog.szerkeszthetoseg())
+print("Háromszögbe írható kr sugara: ",round(szog.korsugar(),2),"cm")
