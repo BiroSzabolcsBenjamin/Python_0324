@@ -1,6 +1,6 @@
 import math
 f=open("eredmeny.txt","w",encoding="UTF-8")
-file_data=[]
+
 class Haromszog:
     def __init__(self,a,b,c):
         self.a=a
