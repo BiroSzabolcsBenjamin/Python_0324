@@ -1,4 +1,6 @@
 import math
+f=open("eredmeny.txt","w",encoding="UTF-8")
+file_data=[]
 class Haromszog:
     def __init__(self,a,b,c):
         self.a=a
@@ -28,4 +30,11 @@ haromszog.append(szog)
 print("A háromszog kerülete: ", szog.kerulet(),"cm")
 print("A háromszog területe: ", round(szog.terulet(),2),"cm")
 print(szog.szerkeszthetoseg())
-print("Háromszögbe írható kr sugara: ",round(szog.korsugar(),2),"cm")
+print("Háromszögbe írható kör sugara: ",round(szog.korsugar(),2),"cm")
+
+lines=[["A háromszog kerülete:",szog.kerulet(),"cm"],'\n',["A háromszog területe: ",round(szog.terulet(),2),"cm"],'\n',[szog.szerkeszthetoseg()],'\n',["Háromszögbe írható kör sugara: ",round(szog.korsugar(),2),"cm"]]
+
+for line in lines:
+    f.writelines(str(line))
+    f.writelines('\n')
+f.close()

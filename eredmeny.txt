@@ -1,0 +1,10 @@
+['A háromszog kerülete:', 50, 'cm']
+
+
+['A háromszog területe: ', 96.82, 'cm']
+
+
+['Szerkeszthető!']
+
+
+['Háromszögbe írható kör sugara: ', 3.87, 'cm']
