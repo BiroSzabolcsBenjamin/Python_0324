@@ -9,7 +9,7 @@ class Haromszog:
     def kerulet(self):
         return self.a+self.b+self.c
     def terulet(self):
-        s=(a+b+c)/2 #kerület fele  
+        s=(a+b+c)/2         #háromszög kerületének fele  
         return math.sqrt(s*(s-a)*(s-b)*(s-c))
     def szerkeszthetoseg(self):
         if a<b+c and b<a+c and c<b+a:
